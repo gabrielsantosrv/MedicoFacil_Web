@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>    
+
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/barraPadrao.css">
+    <link rel="stylesheet" href="../css/loginPadrao.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../js/tooltip.js"></script>
+        
+        <title>Visualização de paciente</title>
+        
+        <style>
+          .conteiner{
+            height: 450px;
+          }
+        </style> 
+    </head>    
+    
+    <body>
+        <form>
+            <div class="topo">
+                <img src="../img/icone.png" class="logo"/>
+                            
+                <span class="nome">Clínica: Sacramento </span> 
+                                
+                 <div class="menuButton">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-cog"></span>
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Visualizar<br/>Horário</a></li>                      
+                      <li class="divider"></li>
+                      <li><a href="#">Sair</a></li>
+                    </ul>
+                  </div>                
+            </div>
+
+            <div class="conteiner">
+                    <div class="form-group campos">
+                    
+                    <div class="form-group">                         
+                         <div class="dropdown">                          
+                           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dia                          
+                           <span class="caret"></span></button>
+                           <ul class="dropdown-menu">
+                             <li><a href="#">Segunda-feira</a></li>
+                             <li><a href="#">Terça-feira</a></li>
+                             <li><a href="#">Quarta-feira</a></li>
+                             <li><a href="#">Quinta-feira</a></li>
+                             <li><a href="#">Sexta-feira</a></li>
+                             <li><a href="#">Sábado</a></li>
+                             <li><a href="#">Domingo</a></li>
+                           </ul>
+                         </div>                        
+                    </div>
+
+                    <div class="form-group">
+                      <a href="#" data-toggle="tooltip" data-placement="right" title="Escolha um horário para iniciar seus atendimentos!">
+                        <label for="txtInicio">Início:</label>
+                        <input type="time" class="form-control" id="txtInicio">
+                      </a>
+                    </div>
+
+                    <div class="form-group">
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="Escolha um horário para finalizar seus atendimentos!">
+                          <label for="txtFim">Fim:</label>
+                          <input type="time" class="form-control" id="txtFim">
+                        </a>
+                    </div>
+
+                    <div class="form-group">
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="Escolha quanto tempo, em média, vai durar cada consulta!">
+                          <label for="txtDuracao">Duração:</label>
+                          <input type="time" class="form-control" id="txtDuracao">
+                        </a>
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="Escolha um intervalo entre os atendimentos!">
+                          <label for="txtIntervalo">Intervalo:</label>
+                          <input type="time" class="form-control" id="txtIntervalo">
+                        </a>
+                    </div>
+
+                    <input type="button" class="btn btn-primary" value="Cadastrar">                
+                </div>
+           </div>
+        </form>
+  
+    </body>
+</html>

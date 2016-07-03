@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>    
+
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/barraPadrao.css">
+    <link rel="stylesheet" href="../css/loginPadrao.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <title>Visualização de paciente</title>
+        
+        
+    </head>    
+    
+    <body>
+        <form>
+            <div class="topo">
+                <img src="../img/icone.png" class="logo"/>
+                            
+                <span class="nome">Nome do paciente</span> 
+                                
+                 <div class="menuButton">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-cog"></span>
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Home</a></li>                      
+                      <li class="divider"></li>
+                      <li><a href="#">Sair</a></li>
+                    </ul>
+                  </div>                
+            </div>
+
+            <div class="conteiner">
+                    <div class="form-group campos">
+                    
+                    <div class="form-group">                         
+                         <div class="dropdown">                          
+                           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Especialidade                          
+                           <span class="caret"></span></button>
+                           <ul class="dropdown-menu">
+                             <li><a href="#">Cardiologista</a></li>
+                             <li><a href="#">Endocrinologista</a></li>
+                             <li><a href="#">Neurologista</a></li>
+                             <li><a href="#">Dermatologista</a></li>
+                             <li><a href="#">Ortopedista</a></li>
+                             <li><a href="#">Ginecologista</a></li>
+                           </ul>
+                         </div>                        
+                    </div>
+
+                     <div class="form-group">                         
+                         <div class="dropdown">                          
+                           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Médico                          
+                           <span class="caret"></span></button>
+                           <ul class="dropdown-menu">
+                             <li><a href="#">Carlos</a></li>
+                             <li><a href="#">João</a></li>
+                             <li><a href="#">Marcos</a></li>
+                             <li><a href="#">Pedro</a></li>
+                             <li><a href="#">Ronaldo</a></li>
+                           </ul>
+                         </div>                        
+                    </div>                                            
+
+                    <div class="form-group">                        
+                          <label for="txtData">Data:</label>
+                          <input type="date" class="form-control" id="txtData">                                                
+                    </div>
+
+                    <div class="form-group">                    
+                          <label for="txtHorario">Horário:</label>
+                          <input type="time" class="form-control" id="txtHorario">                        
+                    </div>
+
+                    <input type="button" class="btn btn-primary" value="Agendar">                
+                </div>
+           </div>
+        </form>
+  
+    </body>
+</html>
